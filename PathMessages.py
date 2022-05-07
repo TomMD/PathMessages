@@ -87,7 +87,7 @@ def apply_rule(rule, changed_files):
                 result = [{ "file" : matches[0],
                             "line" : line,
                             "message": rule['message'] + " " + matchStr,
-                            "title": rule['title']
+                            "type": rule['title']
                           }]
     return result
 
